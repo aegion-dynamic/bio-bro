@@ -3,12 +3,7 @@
 import React, { useState } from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
-interface FAQItemProps {
-  question: string;
-  answer: string;
-}
-
-const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
+const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

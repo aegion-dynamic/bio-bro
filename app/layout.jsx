@@ -12,17 +12,11 @@ export const metadata = {
   description: "Bioinformatics console application",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <div className="app-container mx-auto max-w-screen-xl">
-          {" "}
-          {/* Apply main container class */}
           <Header />
           <main className="flex-1 flex">
             <Sidebar />

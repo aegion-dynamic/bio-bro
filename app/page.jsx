@@ -1,5 +1,3 @@
-import Dashboard from "./dashboard/page";
-
 const Home = () => {
   return <></>;
 };
