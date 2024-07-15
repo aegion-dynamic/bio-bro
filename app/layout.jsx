@@ -8,7 +8,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Your Console",
+  title: "Bio Bro",
   description: "Bioinformatics console application",
 };
 
