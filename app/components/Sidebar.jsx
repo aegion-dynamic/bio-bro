@@ -3,17 +3,10 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { links } from "app/utils/sidebarLinks";
 
 const Sidebar = () => {
   const pathname = usePathname();
-
-  const links = [
-    { label: "Dashboard", href: "/dashboard" },
-    { label: "Workflows", href: "/workflows" },
-    { label: "Data", href: "/data" },
-    { label: "Settings", href: "/settings" },
-    { label: "Help", href: "/help" },
-  ];
 
   return (
     <aside className="w-64 bg-white p-4 border-r border-gray-200">
