@@ -4,12 +4,13 @@ import Header from "@/app/components/Header";
 import Sidebar from "@/app/components/Sidebar";
 // import Footer from "@/app/components/Footer";
 import "./globals.css";
+import { metaData } from "./utils/metaData";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Bio Bro",
-  description: "Bioinformatics console application",
+  title: metaData["app_name"],
+  description: metaData["description"],
 };
 
 export default function RootLayout({ children }) {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="app-container mx-auto max-w-screen-xl">
-          <Header name="Bio Bro" />
+          <Header name={metaData["app_name"]} />
           <main className="flex-1 flex">
             <Sidebar />
             <div className="p-4 w-full">{children}</div>
