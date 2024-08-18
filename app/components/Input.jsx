@@ -2,19 +2,7 @@
 
 import React from "react";
 
-interface InputProps {
-  label: string;
-  type?: string; // Default to "text" if not specified
-  value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
-
-const Input: React.FC<InputProps> = ({
-  label,
-  type = "text",
-  value,
-  onChange,
-}) => {
+const Input = ({ label, type = "text", value, onChange }) => {
   return (
     <div className="mb-4">
       <label

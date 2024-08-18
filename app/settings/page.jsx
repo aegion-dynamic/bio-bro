@@ -3,6 +3,8 @@
 import React, { SetStateAction, useState } from "react";
 import ToggleSwitch from "../components/ToggleSwitch";
 import Input from "../components/Input";
+import PageContainer from "app/components/PageContainer";
+import PageSection from "app/components/PageSection";
 
 const Settings = () => {
   const [emailNotificationsEnabled, setEmailNotificationsEnabled] =
@@ -21,12 +23,9 @@ const Settings = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Settings</h1>
-
-      {/* Settings Sections */}
-      <section className="mb-6">
-        <h2 className="text-lg font-medium mb-2">Account</h2>
+    <PageContainer name="Settings">
+      <PageSection name="Account">
+        {" "}
         <Input
           label="Email"
           type="email"
@@ -39,10 +38,8 @@ const Settings = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-      </section>
-
-      <section className="mb-6">
-        <h2 className="text-lg font-medium mb-2">Notifications</h2>
+      </PageSection>
+      <PageSection name="Notifications">
         <ToggleSwitch
           label="Email Notifications"
           checked={emailNotificationsEnabled}
@@ -53,13 +50,11 @@ const Settings = () => {
           checked={smsNotificationsEnabled}
           onChange={handleSmsToggle}
         />
-      </section>
-
-      <section>
-        <h2 className="text-lg font-medium mb-2">Integrations</h2>
+      </PageSection>
+      <PageSection name="Integrations">
         {/* ... Integration settings components */}
-      </section>
-    </div>
+      </PageSection>
+    </PageContainer>
   );
 };
 

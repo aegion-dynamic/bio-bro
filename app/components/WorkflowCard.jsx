@@ -1,11 +1,6 @@
 import React from "react";
 
-interface WorkflowCardProps {
-  name: string;
-  status: "running" | "completed" | "failed" | string;
-}
-
-const WorkflowCard: React.FC<WorkflowCardProps> = ({ name, status }) => {
+const WorkflowCard = ({ name, status }) => {
   const statusColor = {
     running: "bg-yellow-400",
     completed: "bg-green-400",

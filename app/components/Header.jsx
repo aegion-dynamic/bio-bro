@@ -1,11 +1,11 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 
-const Header = () => {
+const Header = ({ name }) => {
   return (
     <header className="bg-gray-50 border-b border-gray-200 p-4 flex items-center justify-between">
       <div className="container mx-auto flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Bio Bro</h1>
+        <h1 className="text-2xl font-bold">{name}</h1>
         <div className="flex items-center">
           <input
             type="text"

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const DataVisualization: React.FC = () => {
+const DataVisualization = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-sm">
       {/* Charting library integration (e.g., Recharts, Nivo, Chart.js) */}
