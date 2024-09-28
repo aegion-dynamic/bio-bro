@@ -1,3 +1,5 @@
+"use client";
+
 export default function Sidebar() {
-  return <div>Sidebar</div>;
+  return <aside className="float-left w-[20%]">Sidebar</aside>;
 }
