@@ -119,4 +119,4 @@ npm run storybook
   - View your components in isolation.
   - Test different states and variations using controls and args provided by Storybook.
 
-- Checkout the `storybook` docs from [here](https://storybook.js.org/docs/writing-stories)
+- Checkout the `storybook` docs for writing stories from [here](https://storybook.js.org/docs/writing-stories)
